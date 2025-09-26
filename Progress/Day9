@@ -1,0 +1,77 @@
+### Day 9 – Create Flows to Assign Operations Ticket
+
+#### 1. Flow for Assigning Tickets to Certificate Group
+
+**Accessing Flow Designer**  
+- Opened **ServiceNow**.  
+- Clicked **All → Search for Flow Designer**.  
+- Selected **Flow Designer** under **Process Automation**.  
+
+**Creating a New Flow**  
+- Clicked **New → Flow**.  
+- Under **Flow Properties**:
+  - **Flow Name:** Regarding Certificate  
+  - **Application:** Global  
+  - **Run User:** System User  
+- Clicked **Submit**.  
+
+**Adding Trigger**  
+- Clicked **Add a Trigger**.  
+- Searched for **Create or Update a Record** and selected it.  
+- **Table Name:** Operations Related  
+- **Condition:**  
+  - Field: Issue  
+  - Operator: Is  
+  - Value: Regarding Certificates  
+- Clicked **Done**.  
+
+**Adding Action**  
+- Clicked **Add an Action**.  
+- Searched for **Update Record** and selected it.  
+- In **Record Field**, dragged the fields from data navigation.  
+- **Field:** Assigned to Group  
+- **Value:** Certificates  
+- Clicked **Done**.  
+
+**Finalizing Flow**  
+- Clicked **Save**.  
+- Clicked **Activate**.  
+
+---
+
+#### 2. Flow for Assigning Tickets to Platform Group
+
+**Accessing Flow Designer**  
+- Opened **ServiceNow**.  
+- Clicked **All → Search for Flow Designer**.  
+- Selected **Flow Designer** under **Process Automation**.  
+
+**Creating a New Flow**  
+- Clicked **New → Flow**.  
+- Under **Flow Properties**:
+  - **Flow Name:** Regarding Platform  
+  - **Application:** Global  
+  - **Run User:** System User  
+- Clicked **Submit**.  
+
+**Adding Trigger**  
+- Clicked **Add a Trigger**.  
+- Searched for **Create or Update a Record** and selected it.  
+- **Table Name:** Operations Related  
+- **Conditions:**  
+  - Field: Issue → Operator: Is → Value: Unable to login to platform  
+  - Field: Issue → Operator: Is → Value: 404 Error  
+  - Field: Issue → Operator: Is → Value: Regarding User Expired  
+- Clicked **Done**.  
+
+**Adding Action**  
+- Clicked **Add an Action**.  
+- Searched for **Update Record** and selected it.  
+- In **Record Field**, dragged the fields from data navigation.  
+- **Field:** Assigned to Group  
+- **Value:** Platform  
+- Clicked **Done**.  
+
+**Finalizing Flow**  
+- Clicked **Save**.  
+- Clicked **Activate**.

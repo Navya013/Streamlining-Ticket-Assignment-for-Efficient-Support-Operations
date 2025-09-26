@@ -1,0 +1,20 @@
+### Day 8 – Create ACL
+
+#### 1. Accessing ACL
+- Opened **ServiceNow**.  
+- Clicked on **All → Search for ACL**.  
+- Selected **Access Control (ACL)** under **System Security**.  
+
+#### 2. Creating a New ACL
+- Clicked **New**.  
+- Filled in the following details to create a new ACL:
+  - [Add specific ACL details here]  
+- Scroll down to **Requires Role**:
+  - Double-click **Insert a New Row**.  
+  - Added **Admin Role**.  
+- Clicked **Submit**.  
+
+#### 3. Creating Additional ACLs
+- Similarly, created **4 ACLs** for the following fields:
+  - [Add field names/details here]  
+- Followed the same process for each ACL.

@@ -1,0 +1,23 @@
+### Day 4 – Table Creation
+
+#### 1. Accessing Tables
+- Opened **ServiceNow**.  
+- Clicked on **All → Search for Tables**.  
+- Selected **Tables** under **System Definition**.  
+
+#### 2. Creating a New Table
+- Clicked **New**.  
+- Filled in the following details to create a new table:
+  - **Label:** Operations related  
+  - Checked boxes: **Create module** & **Create mobile module**  
+  - **New Menu Name:** Operations related  
+  - **Table Columns:** [Add specific columns here]  
+- Clicked **Submit**.  
+
+#### 3. Creating Choices for Issue Field
+- Used **Form Design** to add choices for the issue field.  
+- Choices added:
+  - Unable to login to platform  
+  - 404 error  
+  - Regarding certificates  
+  - Regarding user expired
